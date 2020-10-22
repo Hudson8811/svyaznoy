@@ -37,6 +37,18 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 /* my scripts */
 
 $(document).ready(function () {
+	anchorScroll($('.anchor'));
+
+	function anchorScroll(e) {
+		e.click(function () {
+			link = $(this).attr('href');
+			to = $(link).offset().top;
+			$('body, html').animate({
+				scrollTop: to
+			}, 800);
+		});
+	}
+
 	var block = $('.dark'),
 			top = [],
 			bottom = [],
@@ -81,8 +93,9 @@ $(document).ready(function () {
 				curItem.addClass('date__item--active').css('opacity', '1');
 
 				for (var i = 1; i <= opacity.length; i++) {
+					if (curItem.index() - i >= 0)
+						menuItem.eq(curItem.index() - i).css('opacity', opacity[i - 1]);
 					menuItem.eq(curItem.index() + i).css('opacity', opacity[i - 1]);
-					menuItem.eq(curItem.index() - i).css('opacity', opacity[i - 1]);
 				}
 			}
 		});
