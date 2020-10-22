@@ -1,0 +1,215 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.first-screen
+		.first-screen__bg
+			img(src='images/bg-first.jpg' alt='')
+		.container.first-screen__container
+			.first-screen__block
+				.first-screen__logo Связной
+				.first-screen__title
+					p На связи четверть века!
+					p Пейджеры и цифровые радиотелефоны, поездки на радиорынок и «не звони мне с городского на мобильный!». Как изменился мир сотовой связи и культура покупок в этой области, вспоминаем вместе с компанией «Связной», отмечающей в этом году 25-летний юбилей.
+			.first-screen__socials поделиться с друзьями
+				.first-screen__socials-flex
+					a.first-screen__socials-item(href='#')
+						svg
+							use(xlink:href='./svg/sprite.svg#vk')
+					a.first-screen__socials-item(href='#')
+						svg
+							use(xlink:href='./svg/sprite.svg#fb')
+					a.first-screen__socials-item(href='#')
+						svg
+							use(xlink:href='./svg/sprite.svg#tw')
+					a.first-screen__socials-item(href='#')
+						svg
+							use(xlink:href='./svg/sprite.svg#ok')
+
+	.timeline
+		.timeline__pink
+		.timeline__purple
+		.container.timeline__container
+			.timeline__title
+				p Таймлайн
+				p Представляем проект в формате лэндинга, где центральное место займет интерактивный таймлайм. В нем мы расскажем о фактах, которые происходили за последние 25 лет в индустрии продажи техники и как оптимизировался подход к настоящему времени (сделав акцент на том, почему «Связной» - образец технологичной компании).  На таймлайне мы отметим пять пятилетий и представим самые яркие факты, связанные с индустрией продажи техники, а также расскажем, как менялась компания «Связной» и мы вместе с ней.
+			.timeline__pic
+				img(src='images/pager.png' alt='')
+
+	.chronology
+		.chronology__outer
+			.container.chronology__container
+				.chronology__year 1995<span>-2000</span>
+				.chronology-item
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic
+								img(src='images/chronology/item-1.gif' alt='')
+						.chronology-item__col(style='padding-top: 14px')
+							.chronology-item__content
+								.chronology-item__year 1995 год
+								.chronology-item__title Недолгая слава пейджеров
+								.chronology-item__text(style='max-width: 666px') Мобильная связь во второй половине 90-х существовала в двух форматах: в виде мобильников-кирпичей весом до полукилограмма и в форме небольших поясных устройств — пейджеров. С практической точки зрения последние были особенно бестолковы: доставка сообщения зависела от множества факторов, и гарантий, что вас в итоге прочитают, никто не давал. Тем не менее пейджеры были признаком финансовой состоятельности и пищей для ума тогдашних музыкантов. Песенка Жуков про «Скинь мене на пейджер, мол, так и так» звучала в те годы из каждого утюга.
+				.chronology-item.chronology-item--reverse
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic.chronology-item__pic--color
+								img(src='images/chronology/item-2.gif' alt='')
+						.chronology-item__col
+							.chronology-item__content
+								.chronology-item__year 1995 год
+								.chronology-item__title Основана компания «Максус»
+								.chronology-item__text(style='max-width: 650px') Основана компания «Максус», основным видом деятельности которой являются оптовые поставки телефонов и персональной аудиотехники в Москве. Местом основной дислокации «Максуса» становится «Горбушка». Именно сюда со всей Москвы едут любители телефонных новинок — главным образом цифровых радиотелефонов стандарта DECT. Именно ради них компания подписывает дистрибьюторское соглашение с Siemens, и так удачно, что завоевывает половину российского рынка этих моделей.
+
+	.chronology.chronology--type.chronology--2005
+		.chronology__outer
+			img(src='images/phone.png' alt='')
+			.chronology__pink
+			.chronology__purple
+			.container.chronology__container
+				.chronology__year 2000<span>-2005</span>
+				.chronology-item
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic.chronology-item__pic--color
+								img(src='images/chronology/item-3.gif' alt='')
+						.chronology-item__col
+							.chronology-item__content
+								.chronology-item__year 2002 год
+								.chronology-item__title Первые <br> мобильные
+								.chronology-item__text(style='max-width: 666px') В 2002 году мобильные телефоны впервые становятся популярнее стационарных, однако активное пользование мобильной связью все еще остается привилегией обеспеченных людей. При средней зарплате в России 80 долларов за одно только подключение к мобильному номеру приходится выкладывать от 50 долларов. Средняя минута разговора стоит 15 центов. Верх бессознательности — позвонить на мобильный с городского телефона и обнулить счет владельца сотового телефона: плату за входящие вызовы законодательно отменят только в 2006 году.
+				.chronology-item.chronology-item--reverse
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic.chronology-item__pic--color
+								img(src='images/chronology/item-4.gif' alt='')
+						.chronology-item__col
+							.chronology-item__content
+								.chronology-item__year 2002 год
+								.chronology-item__title Первые прямые контракты
+								.chronology-item__text(style='max-width: 550px') Компания «Связной» подписывает первые прямые контракты с ведущими производителями персональной аудиотехники и средств связи, такими как Siemens, Motorola, Philips и Ericsson. Летом 2002 года открывается интернет-магазин «Связной», который становится одним из первых интернет-магазинов в мобильном ретейле России.
+
+	.chronology.chronology--2010
+		.chronology__outer
+			img(src='images/phone-2.png' alt='')
+			.container.chronology__container
+				.chronology__year 2005<span>-2010</span>
+				.chronology-item
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic
+								img(src='images/chronology/item-5.gif' alt='')
+						.chronology-item__col(style='padding-top: 14px')
+							.chronology-item__content
+								.chronology-item__year 2005 год
+								.chronology-item__title Мобильный интернет
+								.chronology-item__text(style='max-width: 625px') К концу этой пятилетки в России происходят два ключевых события. Окончательно отключается оборудование советской марки «Алтай», десятилетиями отвечавшее за советскую «мобильную связь» — стационарную телефонию в автомобилях чиновников и силовиков. И почти одновременно с этим происходит запуск телефонии третьего поколения — 3G, благодаря которой жители России знакомятся (пока еще робко) с мобильным интернетом. Одним из первых телефонов с поддержкой новых технологий становится выпущенный в 2005 году Sony Ericsson W900i из серии Walkman.
+				.chronology-item.chronology-item--reverse
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic.chronology-item__pic--color
+								img(src='images/chronology/item-6.gif' alt='')
+						.chronology-item__col
+							.chronology-item__content
+								.chronology-item__year 2007 год
+								.chronology-item__title Экспансия <br> Связного
+								.chronology-item__text(style='max-width: 475px') «Связной» завершает экспансию в регионы, открывая новые салоны сотовой связи по всей России, от Калининграда до Владивостока. Также «Связной» выходит на иностранный рынок, запуская свои первые магазины в Республике Беларусь.
+
+	.chronology.chronology--type.chronology--2015
+		.chronology__outer
+			img(src='images/phone-3.png' alt='')
+			.chronology__pink
+			.chronology__purple
+			.container.chronology__container
+				.chronology__year 2010<span>-2015</span>
+				.chronology-item
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic.chronology-item__pic--color
+								img(src='images/chronology/item-7.gif' alt='')
+						.chronology-item__col
+							.chronology-item__content
+								.chronology-item__year 2011 год
+								.chronology-item__title Эра смартфонов
+								.chronology-item__text(style='max-width: 640px') В 2011 году в Новосибирске запускают первую в России LTE-сеть, благодаря которой мобильный интернет сильно дешевеет и ускоряется. А в 2012-м на полках российских магазинов появляются первые флагманы с поддержкой новой технологии. Классическими мобильниками теперь в шутку предлагают «орехи колоть»: население массово переходит на смартфоны, устанавливая на них всевозможные приложения. Одно из главных открытий этой пятилетки — ватсап, позволяющий обмениваться сообщениями бесплатно. Впрочем, эсэмэски пока еще по-прежнему популярны.
+				.chronology-item.chronology-item--reverse
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic.chronology-item__pic--color
+								img(src='images/chronology/item-8.gif' alt='')
+						.chronology-item__col
+							.chronology-item__content
+								.chronology-item__year 2012 год
+								.chronology-item__title Прямой договор <br> с Apple
+								.chronology-item__text(style='max-width: 643px') «Связной» заключил прямой договор поставки с Apple, став единственным независимым ретейлером, имеющим подобный контракт. Подогревая интерес пользователей к мобильным приложениям, компания выпускает мобильное приложение «Связной тревел» и запускает первый в России квест в Telegram.
+
+	.chronology.chronology--2020
+		.chronology__outer
+			img(src='images/phone-4.png' alt='')
+			.container.chronology__container
+				.chronology__year 2015<span>-2020</span>
+				.chronology-item
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic
+								img(src='images/chronology/item-9.gif' alt='')
+						.chronology-item__col(style='padding-top: 14px')
+							.chronology-item__content
+								.chronology-item__year 2015 год
+								.chronology-item__title Эпоха <br> мобильного интернета
+								.chronology-item__text(style='max-width: 647px') Россия первой в мире начинает официальную продажу смартфонов Xiaomi, которые к тому моменту уже сумели завоевать сердца миллионов жителей планеты. Население страны делится на IOS и Android: для одних по-прежнему важно обзаводиться последними моделями Apple, а другие довольствуются доступным китайским вариантом. Но все активно пользуются мобильным интернетом — настолько, что для многих смартфон уже становится альтернативой рабочему ноутбуку или компьютеру. Все ждут наступление эры 5G. По прогнозам, осталось каких-то пару лет.
+				.chronology-item.chronology-item--reverse
+					.chronology-item__flex
+						.chronology-item__col
+							.chronology-item__pic.chronology-item__pic--color
+								img(src='images/chronology/item-10.gif' alt='')
+						.chronology-item__col
+							.chronology-item__content
+								.chronology-item__year 2020 год
+								.chronology-item__title Точка встречи клиентов и технологий
+								.chronology-item__text(style='max-width: 642px')
+									p «Связной» первым в нашей стране начинает продажи смартфонов Xiaomi, создает первый в России рекламный ролик Apple и развивает монобрендовую сеть Сstore: магазины, в которых представлена вся техника Apple, доступная в нашей стране, открываются в 22 городах. «Связной» первый среди ретейлеров начинает продажи автомобилей Tesla, а еще через год становой сетью в России, где появляются «Яндекс.Станция», а также устройства «умный дом» от «Яндекса» — умная лампочка, умная розетка, умный пульт.
+									p В том же году «Связной» запускает новый формат магазинов с техникой для умного дома «Связной Plus». В 2020 году «Связной» для всех своих покупателей запускает доставку товаров из своего интернет-магазина svyaznoy.ru с помощью курьеров Delivery Club и водителей «Ситимобил» за время, которое не отличается от обычного времени доставки блюд из ресторанов.
+
+	.contest
+		.contest__purple 2020 (с) HSMedia
+		.contest__pink
+		.contest__yellow
+		.contest__outer
+			.container.contest__container
+				.contest__flex
+					.contest__col
+						.contest__title Конкурс
+						.contest__text Расскажи о первом телефоне и получи <br> беспроводную зарядку за 1 рубль!
+						.contest__flex-bottom
+							.contest__auth авторизуйтесь через соц. сети
+								.contest__auth-flex
+									a.contest__auth-item(href='#')
+										svg
+											use(xlink:href='./svg/sprite.svg#vk')
+									a.contest__auth-item(href='#')
+										svg
+											use(xlink:href='./svg/sprite.svg#fb')
+									a.contest__auth-item(href='#')
+										svg
+											use(xlink:href='./svg/sprite.svg#tw')
+									a.contest__auth-item(href='#')
+										svg
+											use(xlink:href='./svg/sprite.svg#ok')
+								.contest__sign-in или пройдите <a href="">регистрацию</a>
+							.contest__best
+								.contest__best-digit 20
+								.contest__best-text 20 лучших историй получат приз <br> от компании «Связной» <br> - промокоды на покупку товара в Связном <br> за 1 рубль.
+					.contest__col
+						form.contest__form(action='' method='POST')
+							.contest__textarea
+								textarea(placeholder='начните писать свою историю тут')
+							input(type='submit')

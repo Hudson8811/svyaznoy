@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('Open-Sans'),
+    url("../fonts/Open-Sans.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Open-Sans.woff2") format("woff2"),
+    url("../fonts/Open-Sans.woff") format("woff"),
+    url("../fonts/Open-Sans.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Svyaznoy Sans';
+    src: local('Svyaznoy Sans'), local('Svyaznoy-Sans'),
+    url("../fonts/Svyaznoy-Sans.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Svyaznoy-Sans.woff2") format("woff2"),
+    url("../fonts/Svyaznoy-Sans.woff") format("woff"),
+    url("../fonts/Svyaznoy-Sans.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Svyaznoy Sans';
+    src: local('Svyaznoy Sans'), local('Svyaznoy-Sans'),
+    url("../fonts/Svyaznoy-Sans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Svyaznoy-Sans-Bold.woff2") format("woff2"),
+    url("../fonts/Svyaznoy-Sans-Bold.woff") format("woff"),
+    url("../fonts/Svyaznoy-Sans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
