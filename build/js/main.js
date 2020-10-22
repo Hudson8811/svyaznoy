@@ -49,6 +49,11 @@ $(document).ready(function () {
 		});
 	}
 
+	$('.chronology').each(function () {
+		$(this).attr('id', 'chronology' + $(this).attr('data-time'));
+		$('.date__item').eq($(this).index() - 3).attr('href', '#' + $(this).attr('id'));
+	});
+
 	var block = $('.dark'),
 			top = [],
 			bottom = [],
