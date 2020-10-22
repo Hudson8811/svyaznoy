@@ -111,6 +111,7 @@
 		height: 17.7083vw;
 		padding: 3.3333vw;
 		background: url("../img/polygon.png") no-repeat;
+		background-size: contain;
 		box-sizing: border-box;
 		position: absolute;
 		top: 3.125vw;
@@ -205,9 +206,16 @@
 	}
 
 	&__pic {
+		width: 38.072vw;
+		height: 27.135vw;
 		position: relative;
 		top: -3.5416vw;
 		right: -6.3541vw;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
 
@@ -328,6 +336,8 @@
 	&--2005 {
 		.chronology {
 			&__outer > img {
+				width: 25.052vw;
+				height: 41.458vw;
 				top: -5.052vw;
 				right: 0;
 			}
@@ -346,6 +356,8 @@
 
 			&__outer {
 				> img {
+					width: 27.8125vw;
+					height: 30.156vw;
 					top: -9.1145vw;
 					right: 2.0833vw;
 				}
@@ -356,6 +368,8 @@
 	&--2015 {
 		.chronology {
 			&__outer > img {
+				width: 28.385vw;
+				height: 37.239vw;
 				top: -4.1145vw;
 				right: 4.0625vw;
 			}
@@ -376,6 +390,8 @@
 		.chronology {
 			&__outer {
 				> img {
+					width: 32.395vw;
+					height: 36.875vw;
 					top: -13.28125vw;
 					right: 0.5729vw;
 				}
@@ -507,6 +523,10 @@
 
 		p:not(:last-child) {
 			margin-bottom: 1.3541vw;
+		}
+
+		span {
+			font-weight: bold;
 		}
 	}
 
@@ -683,6 +703,7 @@
 		height: 17.7083vw;
 		padding: 3.28125vw 1.71875vw 1.71875vw;
 		background: url("../img/polygon.png") no-repeat;
+		background-size: contain;
 		position: relative;
 		box-sizing: border-box;
 	}
