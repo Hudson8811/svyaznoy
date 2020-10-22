@@ -476,15 +476,16 @@
 
 .contest {
 	position: relative;
+	margin-top: -250px;
 
 	&__pink {
 		position: absolute;
-		top: -50px;
+		top: 0;
 		left: 0;
 		width: 100%;
-		height: 567px;
+		height: 100%;
 		background-color: #FF0098;
-		transform: skewY(9deg);
+		clip-path: polygon(0 6%,100% 32%,100% 100%,72% 100%,0 65%);
 	}
 
 	&__purple {
@@ -505,17 +506,17 @@
 
 	&__yellow {
 		width: 100%;
-		height: 798px;
+		height: calc(100% - 38px);
 		background-color: #FEC72E;
 		position: absolute;
-		top: -250px;
+		top: 0;
 		left: 0;
-		clip-path: polygon(0 14.5%,100% 0,100% 100%,0 100%);
+		clip-path: polygon(0 18.5%,100% 0,100% 100%,0 100%);
 	}
 
 	&__outer {
 		position: relative;
-		top: -98px;
+		padding: 150px 0 102px;
 	}
 
 	&__flex {
