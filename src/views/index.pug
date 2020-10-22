@@ -10,7 +10,17 @@ block vars
 
 
 block main
+	.date
+		.date__wrapper
+			.date__item.date__item--active(id='menu-1995') 1995 <br> - <br> 2000
+			.date__item(id='menu-2000' style='opacity: 70%') 2000 <br> - <br> 2005
+			.date__item(id='menu-2005' style='opacity: 50%') 2005 <br> - <br> 2010
+			.date__item(id='menu-2010' style='opacity: 30%') 2010 <br> - <br> 2015
+			.date__item(id='menu-2015' style='opacity: 15%') 2015 <br> - <br> 2020
 	.first-screen
+		.first-screen__contest
+			p Конкурс
+			p получи промокод на покупку нового гаджета за 1 рубль!
 		.first-screen__bg
 			img(src='images/bg-first.jpg' alt='')
 		.container.first-screen__container
@@ -33,6 +43,9 @@ block main
 					a.first-screen__socials-item(href='#')
 						svg
 							use(xlink:href='./svg/sprite.svg#ok')
+		.first-screen__anchor
+			svg
+				use(xlink:href='./svg/sprite.svg#anchor')
 
 	.timeline
 		.timeline__pink
@@ -44,7 +57,7 @@ block main
 			.timeline__pic
 				img(src='images/pager.png' alt='')
 
-	.chronology
+	.chronology.dark(data-time='1995')
 		.chronology__outer
 			.container.chronology__container
 				.chronology__year 1995<span>-2000</span>
@@ -69,7 +82,7 @@ block main
 								.chronology-item__title Основана компания «Максус»
 								.chronology-item__text(style='max-width: 650px') Основана компания «Максус», основным видом деятельности которой являются оптовые поставки телефонов и персональной аудиотехники в Москве. Местом основной дислокации «Максуса» становится «Горбушка». Именно сюда со всей Москвы едут любители телефонных новинок — главным образом цифровых радиотелефонов стандарта DECT. Именно ради них компания подписывает дистрибьюторское соглашение с Siemens, и так удачно, что завоевывает половину российского рынка этих моделей.
 
-	.chronology.chronology--type.chronology--2005
+	.chronology.chronology--type.chronology--2005(data-time='2000')
 		.chronology__outer
 			img(src='images/phone.png' alt='')
 			.chronology__pink
@@ -97,7 +110,7 @@ block main
 								.chronology-item__title Первые прямые контракты
 								.chronology-item__text(style='max-width: 550px') Компания «Связной» подписывает первые прямые контракты с ведущими производителями персональной аудиотехники и средств связи, такими как Siemens, Motorola, Philips и Ericsson. Летом 2002 года открывается интернет-магазин «Связной», который становится одним из первых интернет-магазинов в мобильном ретейле России.
 
-	.chronology.chronology--2010
+	.chronology.chronology--2010.dark(data-time='2005')
 		.chronology__outer
 			img(src='images/phone-2.png' alt='')
 			.container.chronology__container
@@ -123,7 +136,7 @@ block main
 								.chronology-item__title Экспансия <br> Связного
 								.chronology-item__text(style='max-width: 475px') «Связной» завершает экспансию в регионы, открывая новые салоны сотовой связи по всей России, от Калининграда до Владивостока. Также «Связной» выходит на иностранный рынок, запуская свои первые магазины в Республике Беларусь.
 
-	.chronology.chronology--type.chronology--2015
+	.chronology.chronology--type.chronology--2015(data-time='2010')
 		.chronology__outer
 			img(src='images/phone-3.png' alt='')
 			.chronology__pink
@@ -151,7 +164,7 @@ block main
 								.chronology-item__title Прямой договор <br> с Apple
 								.chronology-item__text(style='max-width: 643px') «Связной» заключил прямой договор поставки с Apple, став единственным независимым ретейлером, имеющим подобный контракт. Подогревая интерес пользователей к мобильным приложениям, компания выпускает мобильное приложение «Связной тревел» и запускает первый в России квест в Telegram.
 
-	.chronology.chronology--2020
+	.chronology.chronology--2020.dark(data-time='2015')
 		.chronology__outer
 			img(src='images/phone-4.png' alt='')
 			.container.chronology__container

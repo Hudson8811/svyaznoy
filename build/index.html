@@ -7,12 +7,25 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?202092211228939" rel="stylesheet">
+    <link href="css/main.css?2020922153422919" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
     <main class="main">
+      <div class="date">
+        <div class="date__wrapper">
+          <div class="date__item date__item--active" id="menu-1995">1995 <br> - <br> 2000</div>
+          <div class="date__item" id="menu-2000" style="opacity: 70%">2000 <br> - <br> 2005</div>
+          <div class="date__item" id="menu-2005" style="opacity: 50%">2005 <br> - <br> 2010</div>
+          <div class="date__item" id="menu-2010" style="opacity: 30%">2010 <br> - <br> 2015</div>
+          <div class="date__item" id="menu-2015" style="opacity: 15%">2015 <br> - <br> 2020</div>
+        </div>
+      </div>
       <div class="first-screen">
+        <div class="first-screen__contest">
+          <p>Конкурс</p>
+          <p>получи промокод на покупку нового гаджета за 1 рубль!</p>
+        </div>
         <div class="first-screen__bg"><img src="images/bg-first.jpg" alt=""></div>
         <div class="container first-screen__container">
           <div class="first-screen__block">
@@ -38,6 +51,11 @@
                 </svg></a></div>
           </div>
         </div>
+        <div class="first-screen__anchor">
+          <svg>
+            <use xlink:href="./svg/sprite.svg#anchor"></use>
+          </svg>
+        </div>
       </div>
       <div class="timeline">
         <div class="timeline__pink"></div>
@@ -50,7 +68,7 @@
           <div class="timeline__pic"><img src="images/pager.png" alt=""></div>
         </div>
       </div>
-      <div class="chronology">
+      <div class="chronology dark" data-time="1995">
         <div class="chronology__outer">
           <div class="container chronology__container">
             <div class="chronology__year">1995<span>-2000</span></div>
@@ -85,7 +103,7 @@
           </div>
         </div>
       </div>
-      <div class="chronology chronology--type chronology--2005">
+      <div class="chronology chronology--type chronology--2005" data-time="2000">
         <div class="chronology__outer"><img src="images/phone.png" alt="">
           <div class="chronology__pink"></div>
           <div class="chronology__purple"></div>
@@ -122,7 +140,7 @@
           </div>
         </div>
       </div>
-      <div class="chronology chronology--2010">
+      <div class="chronology chronology--2010 dark" data-time="2005">
         <div class="chronology__outer"><img src="images/phone-2.png" alt="">
           <div class="container chronology__container">
             <div class="chronology__year">2005<span>-2010</span></div>
@@ -157,7 +175,7 @@
           </div>
         </div>
       </div>
-      <div class="chronology chronology--type chronology--2015">
+      <div class="chronology chronology--type chronology--2015" data-time="2010">
         <div class="chronology__outer"><img src="images/phone-3.png" alt="">
           <div class="chronology__pink"></div>
           <div class="chronology__purple"></div>
@@ -194,7 +212,7 @@
           </div>
         </div>
       </div>
-      <div class="chronology chronology--2020">
+      <div class="chronology chronology--2020 dark" data-time="2015">
         <div class="chronology__outer"><img src="images/phone-4.png" alt="">
           <div class="container chronology__container">
             <div class="chronology__year">2015<span>-2020</span></div>
@@ -278,6 +296,6 @@
         </div>
       </div>
     </main>
-    <script src="js/main.js?202092211228939"></script>
+    <script src="js/main.js?2020922153422919"></script>
   </body>
 </html>

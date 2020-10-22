@@ -1,4 +1,6 @@
 .first-screen {
+	position: relative;
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -72,12 +74,77 @@
 	}
 
 	&__socials-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 40px;
 		height: 40px;
+		background-color: $white;
+		border-radius: 50%;
+		transition: background-color 0.3s ease;
 
 		&:not(:last-child) {
 			margin-right: 8px;
 		}
+
+		&:hover {
+			background-color: #FF0098;
+
+			svg {
+				fill: $white;
+			}
+		}
+
+		svg {
+			width: 50%;
+			height: 50%;
+			transition: fill 0.3s ease;
+		}
+	}
+
+	&__contest {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 340px;
+		height: 340px;
+		padding: 64px;
+		background: url("../img/polygon.png") no-repeat;
+		box-sizing: border-box;
+		position: absolute;
+		top: 60px;
+		right: 60px;
+		z-index: 1;
+
+		p {
+			text-align: center;
+			color: $white;
+
+			&:first-child {
+				font-size: 48px;
+				line-height: 48px;
+				font-weight: bold;
+			}
+
+			&:last-child {
+				font-size: 19px;
+				line-height: 24px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__anchor {
+		width: 20px;
+		height: 31px;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		animation: flashing 2s linear infinite;
+		transition: all 0.3s ease;
 
 		svg {
 			width: 100%;
@@ -562,16 +629,33 @@
 	}
 
 	&__auth-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 65px;
 		height: 65px;
+		background-color: #4C2887;
+		border-radius: 50%;
+		border: 1px solid #4C2887;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #FEC72E;
+
+			svg {
+				fill: #4C2887;
+			}
+		}
 
 		+ .contest__auth-item {
 			margin-left: 10px;
 		}
 
 		svg {
-			width: 100%;
-			height: 100%;
+			width: 50%;
+			height: 50%;
+			fill: #FEC72E;
+			transition: fill 0.3s ease;
 		}
 	}
 
@@ -680,6 +764,59 @@
 			width: 100%;
 			height: 100%;
 			background-color: #FF0098;
+		}
+	}
+}
+
+.date {
+	width: 6vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+	&__wrapper {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__item {
+		font-size: 18px;
+		line-height: 21px;
+		color: $white;
+		text-align: center;
+		position: relative;
+
+		+ .date__item {
+			margin-top: 68px;
+		}
+
+		&--active {
+			opacity: 1;
+
+			&::after {
+				content: '';
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: #FF0098;
+				position: absolute;
+				top: 50%;
+				right: -8px;
+				transform: translateY(-50%);
+			}
+		}
+	}
+
+	&--dark {
+		border-color: #4C2887;
+
+		.date__item {
+			color: #4C2887;
 		}
 	}
 }
