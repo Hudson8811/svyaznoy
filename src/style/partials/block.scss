@@ -233,6 +233,7 @@
 
 .timeline {
 	position: relative;
+	overflow: hidden;
 	height: 38.0208vw;
 
 	@include tab {
@@ -454,6 +455,10 @@
 					top: -6.5104vw;
 					left: 50%;
 					transform: translateX(-50%);
+
+					@include tab {
+						display: none;
+					}
 				}
 			}
 

@@ -68,7 +68,7 @@ $(document).ready(function () {
 	$(window).scroll(function () {
 		var scroll = $(this).scrollTop(),
 				isDark = false,
-				opacity = ['70%', '50%', '30%', '15%'];
+				opacity = ['0.7', '0.5', '0.3', '0.15'];
 
 		if (scroll > 0) {
 			$('.first-screen__anchor').fadeOut(300);
