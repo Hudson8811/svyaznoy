@@ -1,3 +1,7 @@
 @mixin tab {
 	@media all and (max-width: 950px) { @content; }
 }
+
+@mixin desk {
+	@media all and (min-width: 951px) { @content; }
+}

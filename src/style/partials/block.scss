@@ -151,10 +151,12 @@
 		}
 
 		&:hover {
-			background-color: #FF0098;
+			@include desk {
+				background-color: #FF0098;
 
-			svg {
-				fill: $white;
+				svg {
+					fill: $white;
+				}
 			}
 		}
 
@@ -650,7 +652,7 @@
 					}
 
 					&__pic {
-						img {
+						video {
 							height: 16.302vw;
 							top: 2.0833vw;
 
@@ -744,9 +746,10 @@
 			}
 		}
 
-		img {
+		video {
 			width: 100%;
 			height: 100%;
+			object-fit: cover;
 			position: relative;
 			border: 1px solid #4C2887;
 		}
@@ -1048,10 +1051,12 @@
 		}
 
 		&:hover {
-			background-color: #FEC72E;
+			@include desk {
+				background-color: #FEC72E;
 
-			svg {
-				fill: #4C2887;
+				svg {
+					fill: #4C2887;
+				}
 			}
 		}
 
@@ -1086,7 +1091,9 @@
 			text-decoration: underline;
 
 			&:hover {
-				text-decoration: none;
+				@include desk {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -1207,7 +1214,9 @@
 			}
 
 			&:hover {
-				text-decoration: none;
+				@include desk {
+					text-decoration: none;
+				}
 			}
 		}
 	}
