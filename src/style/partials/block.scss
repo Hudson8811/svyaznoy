@@ -233,11 +233,11 @@
 
 .timeline {
 	position: relative;
-	overflow: hidden;
 	height: 38.0208vw;
 
 	@include tab {
 		height: auto;
+		overflow: hidden;
 	}
 
 	&__purple,
