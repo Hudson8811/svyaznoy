@@ -8,6 +8,11 @@
 		min-height: 100vh;
 		position: relative;
 		padding: 3.4375vw 0 0;
+
+		@include tab {
+			padding: 4.971vw 0 0;
+			min-height: 97vh;
+		}
 	}
 
 	&__bg {
@@ -37,11 +42,24 @@
 	&__logo {
 		font-size: 4.21875vw;
 		font-weight: bold;
+
+		@include tab {
+			font-size: 10.219vw;
+		}
 	}
 
 	&__title {
 		max-width: 1000px;
 		margin-top: 163px;
+		margin-bottom: 3vw;
+
+		@media (max-width: 450px) {
+			margin-top: 36.9565vw;
+		}
+
+		@include tab {
+			margin-top: 6vw;
+		}
 
 		p {
 			&:first-child {
@@ -49,6 +67,16 @@
 				line-height: 5.104vw;
 				font-weight: bold;
 				color: #FF0098;
+
+				@media (max-width: 450px) {
+					font-size: 17.3913vw;
+					line-height: 14.4927vw;
+				}
+
+				@include tab {
+					font-size: 11.3913vw;
+					line-height: 8.4927vw;
+				}
 			}
 
 			&:last-child {
@@ -57,6 +85,18 @@
 				line-height: 1.354vw;
 				max-width: 28.854vw;
 				margin-top: 2.3958vw;
+
+				@media (max-width: 450px) {
+					font-size: 4.3478vw;
+					line-height: 5.0724vw;
+				}
+
+				@include tab {
+					font-size: 2.3478vw;
+					line-height: 3.0724vw;
+					max-width: 100%;
+					margin-top: 5.0724vw;
+				}
 			}
 		}
 	}
@@ -66,11 +106,20 @@
 		line-height: 1.09375vw;
 		text-transform: uppercase;
 		margin-bottom: 3.6979vw;
+
+		@include tab {
+			font-size: 3.381vw;
+			line-height: 5.0724vw;
+		}
 	}
 
 	&__socials-flex {
 		display: flex;
 		margin-top: 0.416vw;
+
+		@include tab {
+			margin-top: 2vw;
+		}
 	}
 
 	&__socials-item {
@@ -83,8 +132,22 @@
 		border-radius: 50%;
 		transition: background-color 0.3s ease;
 
+		@media (max-width: 450px) {
+			width: 9.6618vw;
+			height: 9.6618vw;
+		}
+
+		@include tab {
+			width: 5.6618vw;
+			height: 5.6618vw;
+		}
+
 		&:not(:last-child) {
 			margin-right: 0.4166vw;
+
+			@include tab {
+				margin-right: 2.2vw;
+			}
 		}
 
 		&:hover {
@@ -134,6 +197,10 @@
 				text-transform: uppercase;
 			}
 		}
+
+		@include tab {
+			display: none;
+		}
 	}
 
 	&__anchor {
@@ -148,6 +215,15 @@
 		transition: all 0.3s ease;
 		cursor: pointer;
 
+		@include tab {
+			width: 3.6231vw;
+			height: 5.6715vw;
+			left: auto;
+			transform: none;
+			right: 3vw;
+			bottom: -2vw;
+		}
+
 		svg {
 			width: 100%;
 			height: 100%;
@@ -159,6 +235,10 @@
 	position: relative;
 	height: 38.0208vw;
 
+	@include tab {
+		height: auto;
+	}
+
 	&__purple,
 	&__pink {
 		position: absolute;
@@ -167,16 +247,28 @@
 		right: 0;
 		bottom: 0;
 		z-index: 1;
+
+		@include tab {
+			top: -6.7vw;
+		}
 	}
 
 	&__purple {
 		background-color: #4C2887;
 		clip-path: polygon(0 19.5%, 100% 3.7%, 100% 42.6%, 0% 91.7%);
+
+		@include tab {
+			clip-path: polygon(0 3.2%,100% 1.9%,100% 68.8%,0 86.5%);
+		}
 	}
 
 	&__pink {
 		background-color: #FF0098;
 		clip-path: polygon(0 26%, 100% 0, 100% 25%, 0% 100%);
+
+		@include tab {
+			clip-path: polygon(0 4%,100% 0,100% 28%,0 50%);
+		}
 	}
 
 	&__container {
@@ -184,16 +276,31 @@
 		display: flex;
 		padding: 2.34375vw 0 0;
 		z-index: 2;
+
+		@include tab {
+			flex-direction: column;
+			padding: 8.344vw 0 0;
+		}
 	}
 
 	&__title {
 		max-width: 36.9791vw;
+
+		@include tab {
+			max-width: 100%;
+			margin-bottom: 27vw;
+		}
 
 		p {
 			&:first-child {
 				font-size: 6.25vw;
 				line-height: 5.1041vw;
 				font-weight: bold;
+
+				@include tab {
+					font-size: 15.4589vw;
+					line-height: 23.671vw;
+				}
 			}
 
 			&:last-child {
@@ -201,6 +308,11 @@
 				font-size: 0.9375vw;
 				line-height: 1.3541vw;
 				margin-top: 1.8229vw;
+
+				@include tab {
+					font-size: 4.3478vw;
+					line-height: 6.28vw;
+				}
 			}
 		}
 	}
@@ -211,6 +323,14 @@
 		position: relative;
 		top: -3.5416vw;
 		right: -6.3541vw;
+
+		@include tab {
+			width: calc(100% + 9.583vw);
+			margin-left: -4.7915vw;
+			height: auto;
+			top: 0;
+			right: 0;
+		}
 
 		img {
 			width: 100%;
@@ -233,6 +353,10 @@
 			top: -18.22916vw;
 			left: 50%;
 			transform: translateX(-50%);
+
+			@include tab {
+				display: none;
+			}
 		}
 	}
 
@@ -240,9 +364,17 @@
 		position: relative;
 		top: -11.25vw;
 
+		@include tab {
+			top: 0;
+		}
+
 		> img {
 			position: absolute;
 			z-index: 2;
+
+			@include tab {
+				position: relative;
+			}
 		}
 	}
 
@@ -251,6 +383,11 @@
 		z-index: 1;
 		width: 85.9375vw;
 		padding-bottom: 7.9166vw;
+
+		@include tab {
+			width: 89.417vw;
+			padding-top: 2vw;
+		}
 	}
 
 	&__year {
@@ -259,6 +396,11 @@
 		color: #FF0098;
 		text-align: center;
 		margin-bottom: 7.3958vw;
+
+		@include tab {
+			font-size: 17.3913vw;
+			margin-bottom: 9.396vw;
+		}
 
 		span {
 			color: $white;
@@ -269,10 +411,19 @@
 	&--type {
 		margin-top: 0;
 
+		@include tab {
+			padding-top: 28.5024vw;
+		}
+
 		.chronology {
 			&__container {
 				position: relative;
 				padding-top: 13.59375vw;
+
+				@include tab {
+					padding-top: 0;
+					padding-bottom: 39.281vw;
+				}
 			}
 
 			&__purple,
@@ -288,6 +439,10 @@
 			&__purple {
 				background-color: #4C2887;
 				clip-path: polygon(0 14.5%,100% 0%,100% 87.8%,0 94.7%);
+
+				@include tab {
+					clip-path: polygon(0 3%,100% 0.7%,100% 96.6%,0 99%);
+				}
 
 				&::before {
 					content: '';
@@ -305,12 +460,21 @@
 			&__pink {
 				background-color: #FF0098;
 				clip-path: polygon(0 9.6%,100% 0,100% 86.3%,0 100%);
+
+				@include tab {
+					clip-path: polygon(0 1.6%,100% 0,100% 98%,0 100%);
+				}
 			}
 
 			&__year {
 				font-size: 6.25vw;
 				font-weight: bold;
 				margin-bottom: 9.7916vw;
+
+				@include tab {
+					font-size: 17.3913vw;
+					margin-bottom: 12.396vw;
+				}
 
 				span {
 					color: #4C2887;
@@ -324,11 +488,25 @@
 
 			+ .chronology-item {
 				margin-top: 8.59375vw;
+
+				@include tab {
+					margin-top: 13.594vw;
+				}
+			}
+
+			&__content {
+				@include tab {
+					margin-top: 15.2vw;
+				}
 			}
 
 			&__year {
 				color: #FF0098;
 				margin-bottom: 0.677vw;
+
+				@include tab {
+					margin-bottom: 3.8vw;
+				}
 			}
 		}
 	}
@@ -340,6 +518,14 @@
 				height: 41.458vw;
 				top: -5.052vw;
 				right: 0;
+
+				@include tab {
+					height: auto;
+					width: calc(100% - 9.583vw);
+					margin: 0 auto;
+					top: 0;
+					margin-top: -22.052vw;
+				}
 			}
 
 			&__container {
@@ -360,22 +546,50 @@
 					height: 30.156vw;
 					top: -9.1145vw;
 					right: 2.0833vw;
+
+					@include tab {
+						height: auto;
+						width: calc(100% - 9.583vw);
+						margin: 0 auto;
+						top: 0;
+						margin-top: -14.052vw;
+						right: 0;
+					}
 				}
 			}
 		}
 	}
 
 	&--2015 {
+		@include tab {
+			padding-top: 62.502vw;
+		}
+
 		.chronology {
 			&__outer > img {
 				width: 28.385vw;
 				height: 37.239vw;
 				top: -4.1145vw;
 				right: 4.0625vw;
+
+				@include tab {
+					height: auto;
+					width: 100%;
+					margin: 0 auto;
+					top: -35vw;
+					margin-top: -15.052vw;
+					right: auto;
+					left: -4vw;
+				}
 			}
 
 			&__container {
 				padding-bottom: 13.4375vw;
+
+				@include tab {
+					margin-top: -23vw;
+					padding-bottom: 53.281vw;
+				}
 			}
 		}
 
@@ -394,6 +608,15 @@
 					height: 36.875vw;
 					top: -13.28125vw;
 					right: 0.5729vw;
+
+					@include tab {
+						height: auto;
+						width: 100%;
+						margin: 0 auto;
+						top: 0;
+						margin-top: -49.052vw;
+						right: 0;
+					}
 				}
 			}
 
@@ -409,6 +632,10 @@
 
 			&__title {
 				margin-bottom: 0.5208vw;
+
+				@include tab {
+					margin-bottom: 3vw;
+				}
 			}
 
 			&--reverse {
@@ -421,6 +648,11 @@
 						img {
 							height: 16.302vw;
 							top: 2.0833vw;
+
+							@include tab {
+								height: 48.3091vw;
+								top: 6.083vw;
+							}
 						}
 					}
 				}
@@ -434,11 +666,20 @@
 
 	+ .chronology-item {
 		margin-top: 6.71875vw;
+
+		@include tab {
+			margin-top: 10.719vw;
+		}
 	}
 
 	&__flex {
 		display: flex;
 		margin: 0 -2.96875vw;
+
+		@include tab {
+			flex-direction: column;
+			margin: 0;
+		}
 	}
 
 	&__col {
@@ -446,8 +687,23 @@
 		margin: 0 2.96875vw;
 		box-sizing: border-box;
 
+		@include tab {
+			width: 100%;
+			margin: 0;
+		}
+
 		&:first-child {
 			padding-right: 1.302vw;
+
+			@include tab {
+				padding-right: 0;
+			}
+		}
+	}
+
+	&__content {
+		@include tab {
+			margin-top: 13.6vw;
 		}
 	}
 
@@ -459,6 +715,13 @@
 		padding-right: 1.1458vw;
 		position: relative;
 
+		@include tab {
+			max-width: 100%;
+			width: calc(100% - 3.14vw);
+			height: 58.4541vw;
+			margin-left: 0;
+		}
+
 		&::before {
 			content: '';
 			display: block;
@@ -468,6 +731,12 @@
 			right: 0;
 			bottom: -1.1458vw;
 			background-color: #4C2887;
+
+			@include tab {
+				right: -3vw;
+				bottom: -3.146vw;
+				width: 100%;
+			}
 		}
 
 		img {
@@ -495,9 +764,15 @@
 		margin-bottom: 0.46875vw;
 		position: relative;
 
+		@include tab {
+			font-size: 4.3478vw;
+			line-height: 5.0724vw;
+			margin-bottom: 2vw;
+		}
+
 		&::before {
 			content: '';
-			display: block;
+			display: inline-block;
 			width: 0.78125vw;
 			height: 0.78125vw;
 			background-color: #FF0098;
@@ -506,6 +781,16 @@
 			top: 50%;
 			left: -3.3593vw;
 			transform: translateY(-50%);
+
+			@include tab {
+				position: relative;
+				width: 3.623vw;
+				height: 3.623vw;
+				top: 0;
+				left: 0;
+				transform: none;
+				margin-right: 3.623vw;
+			}
 		}
 	}
 
@@ -514,12 +799,23 @@
 		line-height: 3.9583vw;
 		font-weight: bold;
 		margin-bottom: 0.9895vw;
+
+		@include tab {
+			font-size: 11.5942vw;
+			line-height: 11.5942vw;
+			margin-bottom: 4.4vw;
+		}
 	}
 
 	&__text {
 		font-family: 'Open Sans';
 		font-size: 0.9375vw;
 		line-height: 1.3541vw;
+
+		@include tab {
+			font-size: 4.3478vw;
+			line-height: 5.0724vw;
+		}
 
 		p:not(:last-child) {
 			margin-bottom: 1.3541vw;
@@ -533,15 +829,27 @@
 	&--reverse {
 		text-align: right;
 
+		@include tab {
+			text-align: left;
+		}
+
 		.chronology-item {
 			&__col {
 				&:first-child {
 					order: 1;
 					padding-right: 0;
+
+					@include tab {
+						order: 0;
+					}
 				}
 
 				&:last-child {
 					padding-right: 1.302vw;
+
+					@include tab {
+						padding-right: 0;
+					}
 				}
 			}
 
@@ -553,10 +861,19 @@
 			&__year::before {
 				left: auto;
 				right: -4.6093vw;
+
+				@include tab {
+					left: 0;
+					right: auto;
+				}
 			}
 
 			&__text {
 				margin-left: auto;
+
+				@include tab {
+					margin-left: 0;
+				}
 			}
 		}
 	}
@@ -566,6 +883,10 @@
 	position: relative;
 	margin-top: -13.0208vw;
 
+	@include tab {
+		margin-top: 0;
+	}
+
 	&__pink {
 		position: absolute;
 		top: 0;
@@ -573,7 +894,11 @@
 		width: 100%;
 		height: 100%;
 		background-color: #FF0098;
-		clip-path: polygon(0 6%,100% 32%,100% 100%,72% 100%,0 65%);
+		clip-path: polygon(0 10%,100% 18%,100% 100%,72% 100%,0 65%);
+
+		@include tab {
+			clip-path: polygon(0 4%,100% 7%,100% 100%,72% 100%,0 65%);
+		}
 	}
 
 	&__purple {
@@ -590,6 +915,10 @@
 		line-height: 0.7291vw;
 		text-transform: uppercase;
 		color: #FEC72E;
+
+		@include tab {
+			display: none;
+		}
 	}
 
 	&__yellow {
@@ -600,21 +929,39 @@
 		top: 0;
 		left: 0;
 		clip-path: polygon(0 18.5%,100% 0,100% 100%,0 100%);
+
+		@include tab {
+			clip-path: polygon(0 6.9%,100% 3%,100% 100%,0 100%);
+			height: 100%;
+		}
 	}
 
 	&__outer {
 		position: relative;
 		padding: 7.8125vw 0 5.3125vw;
+
+		@include tab {
+			padding-bottom: 0;
+		}
 	}
 
 	&__flex {
 		display: flex;
 		margin: 0 -0.9375vw;
+
+		@include tab {
+			flex-direction: column;
+		}
 	}
 
 	&__col {
 		width: calc(50% - 1.875vw);
 		margin: 0 0.9375vw;
+
+		@include tab {
+			width: 100%;
+			margin: 0;
+		}
 	}
 
 	&__title {
@@ -623,12 +970,30 @@
 		color: $white;
 		margin-left: -0.46875vw;
 		margin-bottom: 0.625vw;
+
+		@include tab {
+			font-size: 17.1497vw;
+			line-height: 17.1497vw;
+			margin-bottom: 6.6vw;
+		}
 	}
 
 	&__text {
 		font-size: 1.25vw;
 		line-height: 1.3541vw;
 		color: #4C2887;
+
+		@include tab {
+			font-size: 5.7971vw;
+			line-height: 6.28vw;
+			margin-bottom: 8vw;
+		}
+
+		br {
+			@include tab {
+				display: none;
+			}
+		}
 	}
 
 	&__flex-bottom {
@@ -642,11 +1007,23 @@
 		color: #4C2887;
 		text-transform: uppercase;
 		margin-top: 4.6354vw;
+
+		@include tab {
+			width: 100%;
+			font-size: 4.3478vw;
+			line-height: 5.0724vw;
+			text-align: center;
+		}
 	}
 
 	&__auth-flex {
 		display: flex;
 		margin-top: 0.677vw;
+
+		@include tab {
+			justify-content: center;
+			margin-top: 3vw;
+		}
 	}
 
 	&__auth-item {
@@ -660,6 +1037,11 @@
 		border: 1px solid #4C2887;
 		transition: background-color 0.3s ease;
 
+		@include tab {
+			width: 14.9758vw;
+			height: 14.9758vw;
+		}
+
 		&:hover {
 			background-color: #FEC72E;
 
@@ -670,6 +1052,10 @@
 
 		+ .contest__auth-item {
 			margin-left: 0.5208vw;
+
+			@include tab {
+				margin-left: 2.4154vw;
+			}
 		}
 
 		svg {
@@ -684,6 +1070,12 @@
 		font-size: 0.7291vw;
 		line-height: 1.09375vw;
 		margin-top: 1.3541vw;
+
+		@include tab {
+			font-size: 3.3816vw;
+			line-height: 5.0724vw;
+			margin-top: 6.8vw;
+		}
 
 		a {
 			text-decoration: underline;
@@ -706,6 +1098,22 @@
 		background-size: contain;
 		position: relative;
 		box-sizing: border-box;
+
+		@include tab {
+			display: none;
+		}
+
+		&--mob {
+			display: none;
+			width: 82.1256vw;
+			height: 82.1256vw;
+
+			@include tab {
+				display: flex;
+				padding: 23.986vw 7.729vw 19.3236vw;
+				margin: 0 auto 3vw;
+			}
+		}
 	}
 
 	&__best-digit {
@@ -717,6 +1125,10 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		pointer-events: none;
+
+		@include tab {
+			font-size: 53.14vw;
+		}
 	}
 
 	&__best-text {
@@ -726,6 +1138,11 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		text-align: center;
+
+		@include tab {
+			font-size: 4.3478vw;
+			line-height: 5.0724vw;
+		}
 	}
 
 	&__form {
@@ -742,12 +1159,23 @@
 			box-sizing: border-box;
 			position: relative;
 
+			@include tab {
+				font-size: 4.3478vw;
+				line-height: 5.0724vw;
+				padding: 6.5217vw 5.7971vw;
+			}
+
 			&::placeholder {
 				font-family: $mainFont;
 				font-size: 0.9375vw;
 				text-transform: uppercase;
 				color: $white;
 				opacity: 1;
+
+				@include tab {
+					font-size: 4.3478vw;
+					line-height: 5.0724vw;
+				}
 			}
 
 			&:focus::placeholder {
@@ -758,11 +1186,20 @@
 		input[type="submit"] {
 			display: block;
 			margin: 2.4479vw auto 0;
+			font-family: $mainFont;
 			font-size: 3.125vw;
 			line-height: 3.3333vw;
 			font-weight: bold;
 			color: $white;
 			text-decoration: underline;
+
+			@include tab {
+				margin: 10.448vw auto 13vw;
+				font-size: 11.5942vw;
+				line-height: 11.5942vw;
+				box-sizing: border-box;
+				width: 100%;
+			}
 
 			&:hover {
 				text-decoration: none;
@@ -777,6 +1214,12 @@
 		position: relative;
 		margin-top: 1.7708vw;
 
+		@include tab {
+			max-width: 84.5vw;
+			height: 120.3vw;
+			margin-top: 12.5vw;
+		}
+
 		&::before {
 			content: '';
 			display: block;
@@ -786,6 +1229,11 @@
 			width: 100%;
 			height: 100%;
 			background-color: #FF0098;
+
+			@include tab {
+				top: 7.042vw;
+				left: 6.042vw;
+			}
 		}
 	}
 }
@@ -798,6 +1246,10 @@
 	left: 0;
 	z-index: 20;
 	border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+	@include tab {
+		display: none;
+	}
 
 	&__wrapper {
 		height: 100%;

@@ -52,4 +52,8 @@ img {
 	margin: 0 auto;
 	width: 75.4166vw;
 	max-width: calc(100% - 3.125vw);
+
+	@include tab {
+		width: 90.417vw;
+	}
 }
