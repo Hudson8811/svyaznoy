@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?202092720855435" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -30,16 +30,16 @@
             </div>
           </div>
           <div class="first-screen__socials">поделиться с друзьями
-            <div class="first-screen__socials-flex"><a class="first-screen__socials-item" href="#">
+            <div class="first-screen__socials-flex" data-title="Заголовок share" data-image="" data-url="https://karcher.maximonline.ru/share/"><a class="first-screen__socials-item vk" href="javascript:;" data-id="share_vk" data-mode="nohash">
                 <svg>
                   <use xlink:href="./svg/sprite.svg#vk"></use>
-                </svg></a><a class="first-screen__socials-item" href="#">
+                </svg></a><a class="first-screen__socials-item fb" href="javascript:;" data-id="share_fb" data-mode="nohash">
                 <svg>
                   <use xlink:href="./svg/sprite.svg#fb"></use>
-                </svg></a><a class="first-screen__socials-item" href="#">
+                </svg></a><a class="first-screen__socials-item tw" href="javascript:;" data-id="share_tw" data-mode="nohash">
                 <svg>
                   <use xlink:href="./svg/sprite.svg#tw"></use>
-                </svg></a><a class="first-screen__socials-item" href="#">
+                </svg></a><a class="first-screen__socials-item ok" href="javascript:;" data-id="share_ok" data-mode="nohash">
                 <svg>
                   <use xlink:href="./svg/sprite.svg#ok"></use>
                 </svg></a></div>
@@ -305,20 +305,36 @@
                 <div class="contest__text">Расскажи о первом телефоне и получи <br> беспроводную зарядку за 1 рубль!</div>
                 <div class="contest__flex-bottom">
                   <div class="contest__auth">авторизуйтесь через соц. сети
-                    <div class="contest__auth-flex"><a class="contest__auth-item" href="#">
+                    <div class="contest__auth-flex" data-title="Связной" data-image="" data-url="https://karcher.maximonline.ru/share/7/"><a class="contest__auth-item vk" href="javascript:;" data-id="share_vk">
                         <svg>
                           <use xlink:href="./svg/sprite.svg#vk"></use>
-                        </svg></a><a class="contest__auth-item" href="#">
+                        </svg></a><a class="contest__auth-item fb" href="javascript:;" data-id="share_fb">
                         <svg>
                           <use xlink:href="./svg/sprite.svg#fb"></use>
-                        </svg></a><a class="contest__auth-item" href="#">
+                        </svg></a><a class="contest__auth-item tw" href="javascript:;" data-id="share_tw">
                         <svg>
                           <use xlink:href="./svg/sprite.svg#tw"></use>
-                        </svg></a><a class="contest__auth-item" href="#">
+                        </svg></a><a class="contest__auth-item ok" href="javascript:;" data-id="share_ok">
                         <svg>
                           <use xlink:href="./svg/sprite.svg#ok"></use>
                         </svg></a></div>
                     <div class="contest__sign-in">или пройдите <a href="">регистрацию</a></div>
+                  </div>
+                  <div class="contest__gifts" style="display: none;">вы можете выиграть:
+                    <div class="contest__gifts-row">
+                      <div class="contest__gift-item">
+                        <div class="contest__gift-pic"><img src="images/gift/item-1.jpg" alt=""></div>
+                        <div class="contest__gift-name">Браслет Honor Band 5</div>
+                      </div>
+                      <div class="contest__gift-item">
+                        <div class="contest__gift-pic"><img src="images/gift/item-2.jpg" alt=""></div>
+                        <div class="contest__gift-name">Беспроводная зарядка Honor Wireless charger AP61</div>
+                      </div>
+                      <div class="contest__gift-item">
+                        <div class="contest__gift-pic"><img src="images/gift/item-3.jpg" alt=""></div>
+                        <div class="contest__gift-name">Наушники Honor AM115</div>
+                      </div>
+                    </div>
                   </div>
                   <div class="contest__best">
                     <div class="contest__best-digit">20</div>
@@ -339,6 +355,61 @@
         </div>
       </div>
     </main>
-    <script src="js/main.js?202092720855435"></script>
+    <div class="sign-up" id="sign-up" style="display: none;">
+      <div class="sign-up__title">Регистрация</div>
+      <form class="sign-up__form" action="" method="POST">
+        <div class="sign-up__flex">
+          <div class="sign-up__input">
+            <input type="text" placeholder="Имя">
+          </div>
+          <div class="sign-up__input">
+            <input type="text" placeholder="Фамилия">
+          </div>
+          <div class="sign-up__input">
+            <input type="text" placeholder="e-mail">
+          </div>
+          <div class="sign-up__input">
+            <label>
+              <input type="checkbox" name="rules" checked><b>
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#check"></use>
+                </svg></b>
+              <p>нажимая кнопку далее я <br> соглашаюсь с <a href="#">правилами конкурса</a></p>
+            </label>
+            <label>
+              <input type="checkbox" name="mailing" checked><b>
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#check"></use>
+                </svg></b>
+              <p>подписаться на рассылку и согласиться <br> на обработку личных данных</p>
+            </label>
+          </div>
+        </div>
+        <div class="sign-up__auth">или авторизуйтесь через соц. сети
+          <div class="sign-up__auth-flex" data-title="Связной" data-image="" data-url="https://karcher.maximonline.ru/share/7/"><a class="sign-up__auth-item vk" href="javascript:;" data-id="share_vk">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#vk"></use>
+              </svg></a><a class="sign-up__auth-item fb" href="javascript:;" data-id="share_fb">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#fb"></use>
+              </svg></a><a class="sign-up__auth-item tw" href="javascript:;" data-id="share_tw">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#tw"></use>
+              </svg></a><a class="sign-up__auth-item ok" href="javascript:;" data-id="share_ok">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#ok"></use>
+              </svg></a></div>
+        </div>
+        <div class="sign-up__submit">
+          <input type="submit" value="Далее">
+        </div>
+      </form>
+    </div>
+    <div class="thanks" id="thanks" style="display: none;">
+      <div class="thanks__title">Спасибо!</div>
+      <div class="thanks__subtitle">Ваша работа принята!</div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
   </body>
 </html>

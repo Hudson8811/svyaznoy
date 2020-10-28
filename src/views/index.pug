@@ -30,17 +30,17 @@ block main
 					p На связи четверть века!
 					p Пейджеры и цифровые радиотелефоны, поездки на радиорынок и «не звони мне с городского на мобильный!». Как изменился мир сотовой связи и культура покупок в этой области, вспоминаем вместе с компанией «Связной», отмечающей в этом году 25-летний юбилей.
 			.first-screen__socials поделиться с друзьями
-				.first-screen__socials-flex
-					a.first-screen__socials-item(href='#')
+				.first-screen__socials-flex(data-title="Заголовок share" data-image="" data-url="https://karcher.maximonline.ru/share/")
+					a.first-screen__socials-item.vk(href='javascript:;' data-id="share_vk" data-mode="nohash")
 						svg
 							use(xlink:href='./svg/sprite.svg#vk')
-					a.first-screen__socials-item(href='#')
+					a.first-screen__socials-item.fb(href='javascript:;' data-id="share_fb" data-mode="nohash")
 						svg
 							use(xlink:href='./svg/sprite.svg#fb')
-					a.first-screen__socials-item(href='#')
+					a.first-screen__socials-item.tw(href='javascript:;' data-id="share_tw" data-mode="nohash")
 						svg
 							use(xlink:href='./svg/sprite.svg#tw')
-					a.first-screen__socials-item(href='#')
+					a.first-screen__socials-item.ok(href='javascript:;' data-id="share_ok" data-mode="nohash")
 						svg
 							use(xlink:href='./svg/sprite.svg#ok')
 		a.first-screen__anchor.anchor(href='#timeline')
@@ -225,20 +225,34 @@ block main
 						.contest__text Расскажи о первом телефоне и получи <br> беспроводную зарядку за 1 рубль!
 						.contest__flex-bottom
 							.contest__auth авторизуйтесь через соц. сети
-								.contest__auth-flex
-									a.contest__auth-item(href='#')
+								.contest__auth-flex(data-title="Связной" data-image="" data-url="https://karcher.maximonline.ru/share/7/")
+									a.contest__auth-item.vk(href='javascript:;' data-id="share_vk")
 										svg
 											use(xlink:href='./svg/sprite.svg#vk')
-									a.contest__auth-item(href='#')
+									a.contest__auth-item.fb(href='javascript:;' data-id="share_fb")
 										svg
 											use(xlink:href='./svg/sprite.svg#fb')
-									a.contest__auth-item(href='#')
+									a.contest__auth-item.tw(href='javascript:;' data-id="share_tw")
 										svg
 											use(xlink:href='./svg/sprite.svg#tw')
-									a.contest__auth-item(href='#')
+									a.contest__auth-item.ok(href='javascript:;' data-id="share_ok")
 										svg
 											use(xlink:href='./svg/sprite.svg#ok')
 								.contest__sign-in или пройдите <a href="">регистрацию</a>
+							.contest__gifts(style='display: none;') вы можете выиграть:
+								.contest__gifts-row
+									.contest__gift-item
+										.contest__gift-pic
+											img(src='images/gift/item-1.jpg' alt='')
+										.contest__gift-name Браслет Honor Band 5
+									.contest__gift-item
+										.contest__gift-pic
+											img(src='images/gift/item-2.jpg' alt='')
+										.contest__gift-name Беспроводная зарядка Honor Wireless charger AP61
+									.contest__gift-item
+										.contest__gift-pic
+											img(src='images/gift/item-3.jpg' alt='')
+										.contest__gift-name Наушники Honor AM115
 							.contest__best
 								.contest__best-digit 20
 								.contest__best-text 20 лучших историй получат приз <br> от компании «Связной» <br> - промокоды на покупку товара в Связном <br> за 1 рубль.

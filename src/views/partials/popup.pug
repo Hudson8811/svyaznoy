@@ -1,0 +1,44 @@
+mixin popup()
+	#sign-up.sign-up(style='display: none;')
+		.sign-up__title Регистрация
+		form.sign-up__form(action='' method='POST')
+			.sign-up__flex
+				.sign-up__input
+					input(type='text' placeholder='Имя')
+				.sign-up__input
+					input(type='text' placeholder='Фамилия')
+				.sign-up__input
+					input(type='text' placeholder='e-mail')
+				.sign-up__input
+					label
+						input(type='checkbox' name='rules' checked)
+						b
+							svg
+								use(xlink:href='./svg/sprite.svg#check')
+						p нажимая кнопку далее я <br> соглашаюсь с <a href="#">правилами конкурса</a>
+					label
+						input(type='checkbox' name='mailing' checked)
+						b
+							svg
+								use(xlink:href='./svg/sprite.svg#check')
+						p подписаться на рассылку и согласиться <br> на обработку личных данных
+			.sign-up__auth или авторизуйтесь через соц. сети
+				.sign-up__auth-flex(data-title="Связной" data-image="" data-url="https://karcher.maximonline.ru/share/7/")
+					a.sign-up__auth-item.vk(href='javascript:;' data-id="share_vk")
+						svg
+							use(xlink:href='./svg/sprite.svg#vk')
+					a.sign-up__auth-item.fb(href='javascript:;' data-id="share_fb")
+						svg
+							use(xlink:href='./svg/sprite.svg#fb')
+					a.sign-up__auth-item.tw(href='javascript:;' data-id="share_tw")
+						svg
+							use(xlink:href='./svg/sprite.svg#tw')
+					a.sign-up__auth-item.ok(href='javascript:;' data-id="share_ok")
+						svg
+							use(xlink:href='./svg/sprite.svg#ok')
+			.sign-up__submit
+				input(type='submit' value='Далее')
+
+	#thanks.thanks(style='display: none;')
+		.thanks__title Спасибо!
+		.thanks__subtitle Ваша работа принята!
