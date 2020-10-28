@@ -238,7 +238,7 @@ block main
 									a.contest__auth-item.ok(href='javascript:;' data-id="share_ok")
 										svg
 											use(xlink:href='./svg/sprite.svg#ok')
-								.contest__sign-in или пройдите <a href="">регистрацию</a>
+								.contest__sign-in или пройдите <a data-fancybox href="#sign-up">регистрацию</a>
 							.contest__gifts(style='display: none;') вы можете выиграть:
 								.contest__gifts-row
 									.contest__gift-item
@@ -257,7 +257,7 @@ block main
 								.contest__best-digit 20
 								.contest__best-text 20 лучших историй получат приз <br> от компании «Связной» <br> - промокоды на покупку товара в Связном <br> за 1 рубль.
 					.contest__col
-						form.contest__form(action='' method='POST')
+						form.contest__form(method='POST')
 							.contest__textarea
 								textarea(placeholder='начните писать свою историю тут')
 							input(type='submit' value='Отправить')
