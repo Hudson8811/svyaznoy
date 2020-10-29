@@ -42,6 +42,7 @@
 	&__logo {
 		font-size: 4.21875vw;
 		font-weight: bold;
+		color: $white;
 
 		@include tab {
 			font-size: 10.219vw;
@@ -321,6 +322,7 @@
 	}
 
 	&__pic {
+		display: block;
 		width: 38.072vw;
 		height: 27.135vw;
 		position: relative;
@@ -370,14 +372,19 @@
 		@include tab {
 			top: 0;
 		}
+	}
 
-		> img {
-			position: absolute;
-			z-index: 2;
+	&__contest-pic {
+		position: absolute;
+		z-index: 2;
 
-			@include tab {
-				position: relative;
-			}
+		@include tab {
+			position: relative;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
 		}
 	}
 
@@ -520,7 +527,7 @@
 
 	&--2005 {
 		.chronology {
-			&__outer > img {
+			&__contest-pic {
 				width: 25.052vw;
 				height: 41.458vw;
 				top: -5.052vw;
@@ -547,21 +554,19 @@
 				padding-bottom: 7.3958vw;
 			}
 
-			&__outer {
-				> img {
-					width: 27.8125vw;
-					height: 30.156vw;
-					top: -9.1145vw;
-					right: 2.0833vw;
+			&__contest-pic {
+				width: 27.8125vw;
+				height: 30.156vw;
+				top: -9.1145vw;
+				right: 2.0833vw;
 
-					@include tab {
-						height: auto;
-						width: calc(100% - 9.583vw);
-						margin: 0 auto;
-						top: 0;
-						margin-top: -14.052vw;
-						right: 0;
-					}
+				@include tab {
+					height: auto;
+					width: calc(100% - 9.583vw);
+					margin: 0 auto;
+					top: 0;
+					margin-top: -14.052vw;
+					right: 0;
 				}
 			}
 		}
@@ -573,7 +578,7 @@
 		}
 
 		.chronology {
-			&__outer > img {
+			&__contest-pic {
 				width: 28.385vw;
 				height: 37.239vw;
 				top: -4.1145vw;
@@ -609,21 +614,19 @@
 
 	&--2020 {
 		.chronology {
-			&__outer {
-				> img {
-					width: 32.395vw;
-					height: 36.875vw;
-					top: -13.28125vw;
-					right: 0.5729vw;
+			&__contest-pic {
+				width: 32.395vw;
+				height: 36.875vw;
+				top: -13.28125vw;
+				right: 0.5729vw;
 
-					@include tab {
-						height: auto;
-						width: 100%;
-						margin: 0 auto;
-						top: 0;
-						margin-top: -49.052vw;
-						right: 0;
-					}
+				@include tab {
+					height: auto;
+					width: 100%;
+					margin: 0 auto;
+					top: 0;
+					margin-top: -49.052vw;
+					right: 0;
 				}
 			}
 
@@ -755,6 +758,8 @@
 		}
 
 		&--color {
+			display: block;
+
 			img {
 				border: 1px solid #FF0098;
 			}

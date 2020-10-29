@@ -79,7 +79,7 @@ $(document).ready(function () {
 	var block = $('.dark'),
 			top = [],
 			bottom = [],
-			offset = 100;
+			offset = 700;
 
 	block.each(function () {
 		top.push($(this).offset().top - offset);

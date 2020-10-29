@@ -18,7 +18,7 @@ block main
 			a.date__item.anchor(id='menu-2010' style='opacity: 0.3') 2010 <br> - <br> 2015
 			a.date__item.anchor(id='menu-2015' style='opacity: 0.15') 2015 <br> - <br> 2020
 	.first-screen
-		.first-screen__contest
+		a.first-screen__contest.anchor(href='#contest')
 			p Конкурс
 			p получи промокод на покупку нового гаджета за 1 рубль!
 		.first-screen__bg
@@ -27,7 +27,7 @@ block main
 				source(src='images/bg-first.mp4' type='video/mp4')
 		.container.first-screen__container
 			.first-screen__block
-				.first-screen__logo Связной
+				a.first-screen__logo(href='https://www.svyaznoy.ru/' target='_blank') Связной
 				.first-screen__title
 					p На связи четверть века!
 					p Пейджеры и цифровые радиотелефоны, поездки на радиорынок и «не звони мне с городского на мобильный!». Как изменился мир сотовой связи и культура покупок в этой области, вспоминаем вместе с компанией «Связной», отмечающей в этом году 25-летний юбилей.
@@ -56,7 +56,7 @@ block main
 			.timeline__title
 				p Таймлайн
 				p Даёшь пятилетку досрочно, - это на самом деле не про советское народное хозяйство, а про технику и технологии, которые развивались в последние десятилетия космическими темпами. Пять самых ярких, технологичных и революционных пятилеток в области сотовой связи, - в интерактивном таймлайне, подготовленном совместно с компанией «Связной».
-			.timeline__pic
+			a.timeline__pic.anchor(href='#contest')
 				img(src='images/pager.png' alt='')
 
 	.chronology.dark(data-time='1995')
@@ -90,7 +90,8 @@ block main
 
 	.chronology.chronology--type.chronology--2005(data-time='2000')
 		.chronology__outer
-			img(src='images/phone.png' alt='')
+			a.chronology__contest-pic.anchor(href='#contest')
+				img(src='images/phone.png' alt='')
 			.chronology__pink
 			.chronology__purple
 			.container.chronology__container
@@ -122,7 +123,8 @@ block main
 
 	.chronology.chronology--2010.dark(data-time='2005')
 		.chronology__outer
-			img(src='images/phone-2.png' alt='')
+			a.chronology__contest-pic.anchor(href='#contest')
+				img(src='images/phone-2.png' alt='')
 			.container.chronology__container
 				.chronology__year 2005<span>-2010</span>
 				.chronology-item
@@ -152,7 +154,8 @@ block main
 
 	.chronology.chronology--type.chronology--2015(data-time='2010')
 		.chronology__outer
-			img(src='images/phone-3.png' alt='')
+			a.chronology__contest-pic.anchor(href='#contest')
+				img(src='images/phone-3.png' alt='')
 			.chronology__pink
 			.chronology__purple
 			.container.chronology__container
@@ -184,7 +187,8 @@ block main
 
 	.chronology.chronology--2020.dark(data-time='2015')
 		.chronology__outer
-			img(src='images/phone-4.png' alt='')
+			a.chronology__contest-pic.anchor(href='#contest')
+				img(src='images/phone-4.png' alt='')
 			.container.chronology__container
 				.chronology__year 2015<span>-2020</span>
 				.chronology-item
@@ -202,7 +206,7 @@ block main
 				.chronology-item.chronology-item--reverse
 					.chronology-item__flex
 						.chronology-item__col
-							.chronology-item__pic.chronology-item__pic--color
+							a.chronology-item__pic.chronology-item__pic--color(href='https://www.svyaznoy.ru/' target='_blank')
 								video(autoplay loop muted playsinline)
 									source(src='images/chronology/item-10.webm' type='video/webm')
 									source(src='images/chronology/item-10.mp4' type='video/mp4')
@@ -212,7 +216,7 @@ block main
 								.chronology-item__title Точка встречи клиентов и технологий
 								.chronology-item__text <span>«Связной» первым в нашей стране начинает продажи смартфонов Xiaomi,</span> создает первый в России рекламный ролик Apple и развивает монобрендовую сеть Сstore: магазины, в которых представлена вся техника Apple, доступная в нашей стране, открываются в 22 городах. «Связной» первый среди ретейлеров начинает продажи автомобилей Tesla, а еще через год становится первой сетью в России, где появляются «Яндекс.Станция», а также устройства «умный дом» от «Яндекса» — умная лампочка, умная розетка, умный пульт. В том же году «Связной» запускает новый формат магазинов с техникой для умного дома «Связной Plus». В 2020 году «Связной» для всех своих покупателей запускает доставку товаров из своего интернет-магазина svyaznoy.ru с помощью курьеров Delivery Club и водителей «Ситимобил» за время, которое не отличается от обычного времени доставки блюд из ресторанов.
 
-	.contest
+	#contest.contest
 		.contest__purple 2020 (с) HSMedia
 		.contest__pink
 		.contest__yellow
