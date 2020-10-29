@@ -26,7 +26,14 @@ $(document).ready(function () {
 	function anchorScroll(e) {
 		e.click(function () {
 			link = $(this).attr('href');
-			to = $(link).offset().top;
+			block = $('.chronology').eq($(this).index());
+
+			if (link.substring(1) === block.attr('id') && block.hasClass('dark')) {
+				to = $(link).offset().top - 200;
+			} else {
+				to = $(link).offset().top;
+			}
+
 			$('body, html').animate({
 				scrollTop: to
 			}, 800);
