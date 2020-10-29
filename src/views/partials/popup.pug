@@ -24,16 +24,16 @@ mixin popup()
 						p подписаться на рассылку и согласиться <br> на обработку личных данных
 			.sign-up__auth или авторизуйтесь через соц. сети
 				.sign-up__auth-flex(data-title="Связной" data-image="" data-url="https://karcher.maximonline.ru/share/7/")
-					a.sign-up__auth-item.vk(href='javascript:;' data-id="share_vk")
+					a.sign-up__auth-item.vk(href='javascript:;' data-id="share_vk" data-auth="vk")
 						svg
 							use(xlink:href='./svg/sprite.svg#vk')
-					a.sign-up__auth-item.fb(href='javascript:;' data-id="share_fb")
+					a.sign-up__auth-item.fb(href='javascript:;' data-id="share_fb" data-auth="fb")
 						svg
 							use(xlink:href='./svg/sprite.svg#fb')
-					a.sign-up__auth-item.tw(href='javascript:;' data-id="share_tw")
+					a.sign-up__auth-item.tw(href='javascript:;' data-id="share_tw" data-auth="tw")
 						svg
 							use(xlink:href='./svg/sprite.svg#tw')
-					a.sign-up__auth-item.ok(href='javascript:;' data-id="share_ok")
+					a.sign-up__auth-item.ok(href='javascript:;' data-id="share_ok" data-auth="ok")
 						svg
 							use(xlink:href='./svg/sprite.svg#ok')
 			.sign-up__submit
