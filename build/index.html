@@ -20,7 +20,12 @@
           <p>Конкурс</p>
           <p>получи промокод на покупку нового гаджета за 1 рубль!</p>
         </div>
-        <div class="first-screen__bg"><img src="images/bg-first.gif" alt=""></div>
+        <div class="first-screen__bg">
+          <video autoplay loop muted playsinline>
+            <source src="images/bg-first.webm" type="video/webm">
+            <source src="images/bg-first.mp4" type="video/mp4">
+          </video>
+        </div>
         <div class="container first-screen__container">
           <div class="first-screen__block">
             <div class="first-screen__logo">Связной</div>
@@ -347,7 +352,7 @@
               <div class="contest__col">
                 <form class="contest__form" method="POST">
                   <div class="contest__textarea">
-                    <textarea placeholder="начните писать свою историю тут"></textarea>
+                    <textarea name="story" placeholder="начните писать свою историю тут"></textarea>
                   </div>
                   <input type="submit" value="Отправить">
                 </form>
@@ -362,13 +367,13 @@
       <form class="sign-up__form" method="POST">
         <div class="sign-up__flex">
           <div class="sign-up__input">
-            <input type="text" placeholder="Имя">
+            <input type="text" name="firstName" placeholder="Имя">
           </div>
           <div class="sign-up__input">
-            <input type="text" placeholder="Фамилия">
+            <input type="text" name="lastName" placeholder="Фамилия">
           </div>
           <div class="sign-up__input">
-            <input type="text" placeholder="e-mail">
+            <input type="text" name="email" placeholder="e-mail">
           </div>
           <div class="sign-up__input">
             <label>

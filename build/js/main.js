@@ -151,7 +151,26 @@ $(document).ready(function () {
 		$.ajax({
 			type: form.attr('method'),
 			url: '/save_user/',
-			data: form.serialize()
+			data: form.serialize(),
+			success: function(data) {
+				if (JSON.parse(data).hashcode != '' && JSON.parse(data).hashcode != undefined) {
+					hash = JSON.parse(data).hashcode;
+
+					$('.contest__auth-flex').each(function () {
+						var url = $(this).data('url');
+						url += '&u='+encodeURIComponent(hash);
+						$(this).attr('data-url', url);
+					});
+
+					$('.contest__auth').hide();
+					$('.contest__gifts').show();
+					$('.contest__textarea textarea').off('click');
+					$.fancybox.close();
+				}
+			},
+			error: function () {
+				console.log('Ошибка авторизации');
+			}
 		});
 	});
 

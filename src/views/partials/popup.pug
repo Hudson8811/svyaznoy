@@ -4,11 +4,11 @@ mixin popup()
 		form.sign-up__form(method='POST')
 			.sign-up__flex
 				.sign-up__input
-					input(type='text' placeholder='Имя')
+					input(type='text' name='firstName' placeholder='Имя')
 				.sign-up__input
-					input(type='text' placeholder='Фамилия')
+					input(type='text' name='lastName' placeholder='Фамилия')
 				.sign-up__input
-					input(type='text' placeholder='e-mail')
+					input(type='text' name='email' placeholder='e-mail')
 				.sign-up__input
 					label
 						input(type='checkbox' name='rules' checked)

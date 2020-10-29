@@ -22,7 +22,9 @@ block main
 			p Конкурс
 			p получи промокод на покупку нового гаджета за 1 рубль!
 		.first-screen__bg
-			img(src='images/bg-first.gif' alt='')
+			video(autoplay loop muted playsinline)
+				source(src='images/bg-first.webm' type='video/webm')
+				source(src='images/bg-first.mp4' type='video/mp4')
 		.container.first-screen__container
 			.first-screen__block
 				.first-screen__logo Связной
@@ -261,5 +263,5 @@ block main
 					.contest__col
 						form.contest__form(method='POST')
 							.contest__textarea
-								textarea(placeholder='начните писать свою историю тут')
+								textarea(name='story' placeholder='начните писать свою историю тут')
 							input(type='submit' value='Отправить')
